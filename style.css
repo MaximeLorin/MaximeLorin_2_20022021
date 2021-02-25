@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("polices/Raleway-VariableFont_wght.ttf") format("truetype");
+         
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+    width: 1170px;
+    border:solid;
+    margin: auto;
+    font-family:Raleway;
+}
+.hautPage
+{
+    width: 96%;
+    height: 5%;
+    border: solid;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.hautPage--logo
+{
+    border:solid;
+    width: 28%;
+}
+.hautPage--bouttons
+{
+    border: solid;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section1
+{
+    border:solid;
+    width: 96%;
+    margin: auto;
+}
+.section1--titre--principal_gras
+{
+    font-weight: bold;
+}
+.section1--recherche
+{
+    border:solid;
+    display: flex;
+}
+.section1--filtres
+{
+    border: solid;
+    display: flex;
+}
+.section1--filtres--bouttons
+{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.section2
+{
+    border:solid;
+    width: 96%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section2--hebergement
+{
+    border:solid;
+    width: 60%;
+}
+.section2--hebergement--vignette
+{
+    border: solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.section2--hebergement--vignette--case
+{
+    border: solid;
+    width: 30%;
+}
+.section2--hebergement--vignette--case--img
+{
+    width: 100%;
+    
+    
+    
+}
+.section2--populaires
+{
+    border:solid;
+    width: 30%;
+    
+}
+.section2--populaires--titre
+{
+    border: solid;
+    display: flex;
+    
+
+}
+.section3
+{
+    border:solid;
+    width: 96%;
+    margin: auto;
+}
+.section3--vignettes
+{
+    border:solid;
+    height: 96%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.basPage
+{
+    border:solid;
+    width: 96%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
