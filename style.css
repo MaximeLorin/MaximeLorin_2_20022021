@@ -7,122 +7,54 @@
 }
 body
 {
-    width: 1170px;
+    width: 1366px;
+    height: 1884px;
     border:solid;
-    margin: auto;
+    margin: auto; 
+    padding: auto;
     font-family:Raleway;
+    display: grid;
+    grid-template:repeat(40,1fr)/repeat(40,1fr) ;
 }
+
+/*Partie menu*/
 .hautPage
 {
-    width: 96%;
-    height: 5%;
-    border: solid;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.hautPage--logo
-{
     border:solid;
-    width: 28%;
+    grid-area: 1/2/4/40;
 }
-.hautPage--bouttons
-{
-    border: solid;
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+
+/*Section recherche*/
 .section1
 {
-    border:solid;
-    width: 96%;
-    margin: auto;
-}
-.section1--titre--principal_gras
-{
-    font-weight: bold;
-}
-.section1--recherche
-{
-    border:solid;
-    display: flex;
-}
-.section1--filtres
-{
     border: solid;
-    display: flex;
+    grid-area: 4/2/8/40;
 }
-.section1--filtres--bouttons
-{
-    margin-left: 1%;
-    margin-right: 1%;
-}
+
+/*Section cases hébergements*/
 .section2
 {
-    border:solid;
-    width: 96%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.section2--hebergement
-{
-    border:solid;
-    width: 60%;
-}
-.section2--hebergement--vignette
-{
     border: solid;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    grid-area : 8/2/18/24;
 }
-.section2--hebergement--vignette--case
-{
-    border: solid;
-    width: 30%;
-}
-.section2--hebergement--vignette--case--img
-{
-    width: 100%;
-    
-    
-    
-}
-.section2--populaires
-{
-    border:solid;
-    width: 30%;
-    
-}
-.section2--populaires--titre
-{
-    border: solid;
-    display: flex;
-    
 
+/*Section cases populaires*/
+.section25
+{
+    border: solid;
+    grid-area: 8/26/18/40;
 }
+
+/*Section cases activités*/
 .section3
 {
     border:solid;
-    width: 96%;
-    margin: auto;
-}
-.section3--vignettes
-{
-    border:solid;
-    height: 96%;
-    display: flex;
-    justify-content:space-between;
+    grid-area: 20/2/32/40;;
 }
 
+/*Section bas de page*/
 .basPage
 {
     border:solid;
-    width: 96%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
+    grid-area:33/1/41/41;
 }
