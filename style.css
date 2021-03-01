@@ -5,56 +5,244 @@
     font-weight: normal;
     font-style: normal;
 }
+/*Général*/
 body
 {
     width: 1366px;
     height: 1884px;
-    border:solid;
     margin: auto; 
     padding: auto;
     font-family:Raleway;
     display: grid;
     grid-template:repeat(40,1fr)/repeat(40,1fr) ;
 }
+h1
+{
+    font-size: 1.2em;
+    font-weight: 1000;
+}
+h2
+{
+    font-size: 1.05em;
+    font-weight: 1000;
+}
+p
+{
+    font-size: 1em;
+}
+
 
 /*Partie menu*/
 .hautPage
 {
-    border:solid;
-    grid-area: 1/2/4/40;
+    grid-area: 1/2/3/40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hautPage--logo
+{
+    width: 100px;
+    height: 45px;
+    
+}
+.hautPage--bouttons
+{
+    
+    display:flex;
+    width: 430px;
+    height: 100%;
+    justify-content: space-around;
+}
+.hautPage--bouttons--texte
+{
+    display:flex;
+    align-items: center;
+    height: 100%;
+    
+}
+.hautPage--bouttons--texte:hover
+{
+    
+    border-top: solid #0065FC;
+    color: #0065FC;
+}
+.hautPage--bouttons--texte_bleu
+{
+    color: #0065FC;
+    font-weight: bold;
 }
 
 /*Section recherche*/
 .section1
 {
-    border: solid;
-    grid-area: 4/2/8/40;
+    grid-area: 3/2/9/40;
 }
+.section1--titre--txt p
+{
+    height: 20px;
+    margin-top: -5px;
+}
+.section1--recherche
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #F2F2F2;
+    width: 420px;
+    height: 45px;
+    border-radius: 15px;
+}
+.section1--recherche--boutton
+{
+    background-color: #0065FC;
+    height: 100%;
+    width: 145px;
+    color: white;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+.section1--recherche i
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    color: black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 100%;
+    width: 45px;
+}
+.section1--recherche--inpt
+{
+    border:none;
+    width: 235px;
+    height: 100%;
+    
+}
+.section1--filtres
+{
+    display: flex;
+    width: 930px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.section1--filtres--bouttons
+{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 45px;
+    border:solid 2px #F2F2F2;
+    border-radius: 25px;
+    
+}
+.section1--filtres--bouttons i
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 25px;
+    background-color: #DEEBFF ;
+    color: #0065FC;
+    margin-left: -3px;
+}
+.section1--filtres--bouttons h2
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section1--filtres--bouttons:hover
+{
+    background-color: #F2F2F2;
+}
+.section1--info
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.section1--info i 
+{ 
+    color: #0065FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: solid 1px #F2F2F2;
+    border-radius:25px;
+    margin-right: 5px;
+}
+
 
 /*Section cases hébergements*/
 .section2
 {
-    border: solid;
-    grid-area : 8/2/18/24;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    grid-area : 9/2/21/24;
+}
+.section2--hebergement--vignette
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 440px;
+    justify-content: space-evenly;
+}
+.section2--hebergement--vignette--case
+{
+    background-color: white;
+    width: 240px;
+    height: 190px;
+    border-radius: 20px;
 }
 
 /*Section cases populaires*/
 .section25
 {
-    border: solid;
-    grid-area: 8/26/18/40;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    grid-area: 9/26/21/40;
 }
-
+.section25--titre
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section25--vignette
+{
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 /*Section cases activités*/
 .section3
 {
     border:solid;
-    grid-area: 20/2/32/40;;
+    grid-area: 22/2/35/40;;
 }
 
 /*Section bas de page*/
 .basPage
 {
     border:solid;
-    grid-area:33/1/41/41;
+    grid-area:36/1/41/41;
 }

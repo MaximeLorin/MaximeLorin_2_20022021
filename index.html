@@ -4,40 +4,39 @@
         <meta charset= "utf-8" />
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="solid.css">
+        <script src="https://kit.fontawesome.com/4c2d4e0893.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class= "hautPage">
             <img class= "hautPage--logo" src= "images/Reservia@3x.png" alt= "Logo">
             <div class= "hautPage--bouttons">
-                <div class= "hautPage--bouttons--texte"><p>Hébergements</p></div>
-                <div class= "hautPage--bouttons--texte"><p>Activités</p></div>
-                <div class= "hautPage--bouttons--texte hautPage--bouttons--texte_bleu"><p>S'inscrire</p></div>
+                <div class= "hautPage--bouttons--texte"><a>Hébergements</a></div>
+                <div class= "hautPage--bouttons--texte"><a>Activités</a></div>
+                <div class= "hautPage--bouttons--texte hautPage--bouttons--texte_bleu"><a>S'inscrire</a></div>
             </div>
         </div>
         <div class= "section1">
             <div class= "section1--titre">
-                <div class= "section1--titre--principal section1--titre--principal_gras">Trouvez votre hébergement pour des vacances de rêve</div>
-                <div class= "section1--titre--principal">En plein centre ville ou en pleine nature</div>
+                <div class= "section1--titre--txt"><h1>Trouvez votre hébergement pour des vacances de rêve</h1></div>
+                <div class= "section1--titre--txt"><p>En plein centre ville ou en pleine nature</p></div>
             </div>
             <div class= "section1--recherche">
-                <div class= "section1--recherche--img"><i class="fa-map-marker-alt"></i></div>
-                <div class= "section1--recherche--inpt">
-                    <input>
-                </div>
-                <div class= "section1--recherche--boutton">Rechercher</div>
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="search" class="section1--recherche--inpt" name="q"aria-label="Search through site content">
+                <button class= "section1--recherche--boutton">Rechercher</button>
             </div>
             <div class= "section1--filtres">
-                <div class= "section1--filtres--txt">Filtres</div>
-                <div class= "section1--filtres--bouttons"><i class="fas fa-money-bill-wave-alt"></i>Économique</div>
-                <div class= "section1--filtres--bouttons"><img>Familial</div>
-                <div class= "section1--filtres--bouttons"><img>Romantique</div>
-                <div class= "section1--filtres--bouttons"><img>Animaux autorisés</div>
+                <h2>Filtres</h2>
+                <div class= "section1--filtres--bouttons"><i class="fas fa-money-bill-wave"></i><h2>Économique</h2></div>
+                <div class= "section1--filtres--bouttons"><i class="fas fa-child"></i><h2>Familial</h2></div>
+                <div class= "section1--filtres--bouttons"><i class="fas fa-heart"></i><h2>Romantique</h2></div>
+                <div class= "section1--filtres--bouttons"><i class="fas fa-dog"></i><h2>Animaux autorisés</h2></div>
             </div>
-            <div class= "section1--info"><img>Plus de 500 logements disponibles dans cette ville</div>
+            <div class= "section1--info"><i class="fas fa-info"></i>Plus de 500 logements disponibles dans cette ville</div>
         </div>
         <div class= "section2">
             <div class= "section2--hebergement">
-                <div class= "section2--hebergement--titre">Hébergements à Marseille</div>
+                <div class= "section2--hebergement--titre"><h1>Hébergements à Marseille</h1></div>
                 <div class= "section2--hebergement--vignette">
                     <div class= "section2--hebergement--vignette--case">
                         <div class= "section2--hebergement--vignette--case--img"><img class= "section2--hebergement--vignette--case--img" src= "" alt= "Auberge Cannebière"></div>
@@ -70,36 +69,36 @@
                         <div class= "section2--hebergement--vignette--case--txt2">Nuit à partir de 96€</div>
                     </div>
                 </div>
-                <div class= "section2--affch">Afficher plus</div>
+                <div class= "section2--affch"><h2>Afficher plus</h2></div>
             </div>   
         </div>
         <div class= "section25">
-            <div class= "section2.5--titre">
-                <div class= "section2.5--titre--txt">Les plus populaires</div>
-                <div class= "section2.5--titre--img"><img></div>
+            <div class= "section25--titre">
+                <div class= "section25--titre--txt"><h1>Les plus populaires</h1></div>
+                <div class= "section25--titre--img"><i class="fas fa-chart-line"></i></div>
             </div>
-            <div class= "section2.5--vignette">
-                <div class= "section2.5--vignette--img"><img></div>
-                <div class= "section2.5--vignette--blcTxt">
-                    <div class= "section2.5--vignette--blcTxt-txt1">Hôtel Le soleil du matin</div>
-                    <div class= "section2.5--vignette--blcTxt-txt2">Nuit à partir de 128€</div>
-                    <div class= "section2.5--vignette--blcTxt-etoiles"><img></div>
+            <div class= "section25--vignette">
+                <div class= "section25--vignette--img"><img></div>
+                <div class= "section25--vignette--blcTxt">
+                    <div class= "section25--vignette--blcTxt-txt1">Hôtel Le soleil du matin</div>
+                    <div class= "section25--vignette--blcTxt-txt2">Nuit à partir de 128€</div>
+                    <div class= "section25--vignette--blcTxt-etoiles"><img></div>
                 </div>
             </div>
-            <div class= "section2.5--vignette">
-                <div class= "section2.5--vignette--img"><img></div>
-                <div class= "section2.5--vignette--blcTxt">
-                    <div class= "section2.5--vignette--blcTxt-txt1">Au coeur de l'eau Chambres d'hôtes</div>
-                    <div class= "section2.5--vignette--blcTxt-txt2">Nuit à partir de 71€</div>
-                    <div class= "section2.5--vignette--blcTxt-etoiles"><img></div>
+            <div class= "section25--vignette">
+                <div class= "section25--vignette--img"><img></div>
+                <div class= "section25--vignette--blcTxt">
+                    <div class= "section25--vignette--blcTxt-txt1">Au coeur de l'eau Chambres d'hôtes</div>
+                    <div class= "section25--vignette--blcTxt-txt2">Nuit à partir de 71€</div>
+                    <div class= "section25--vignette--blcTxt-etoiles"><img></div>
                 </div>
             </div>
-            <div class= "section2.5--vignette">
-                <div class= "section2.5--vignette--img"><img></div>
-                <div class= "section2.5--vignette--blcTxt">
-                    <div class= "section2.5--vignette--blcTxt-txt1">Hôtel Tout bleu et Blanc</div>
-                    <div class= "section2.5--vignette--blcTxt-txt2">Nuit à partir de 68€</div>
-                    <div class= "section2.5--vignette--blcTxt-etoiles"><img></div>
+            <div class= "section25--vignette">
+                <div class= "section25--vignette--img"><img></div>
+                <div class= "section25--vignette--blcTxt">
+                    <div class= "section25--vignette--blcTxt-txt1">Hôtel Tout bleu et Blanc</div>
+                    <div class= "section25--vignette--blcTxt-txt2">Nuit à partir de 68€</div>
+                    <div class= "section25--vignette--blcTxt-etoiles"><img></div>
                 </div>
             </div>
         </div>
