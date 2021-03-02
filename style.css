@@ -32,6 +32,7 @@ p
 }
 
 
+
 /*Partie menu*/
 .hautPage
 {
@@ -163,6 +164,8 @@ p
 
 .section1--filtres--bouttons:hover
 {
+    transform: scale(1.04);
+    transition: 0.2s;
     background-color: #F2F2F2;
 }
 .section1--info
@@ -192,21 +195,71 @@ p
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    grid-area : 9/2/21/24;
+    grid-area : 9/2/21/26;
+}
+.section2--hebergement
+{
+    margin: 3%;
 }
 .section2--hebergement--vignette
 {
     display: flex;
     flex-wrap: wrap;
     height: 440px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .section2--hebergement--vignette--case
 {
     background-color: white;
     width: 240px;
-    height: 190px;
+    height: 200px;
     border-radius: 20px;
+    box-shadow: 1px 1px 6px #8686863b;
+}
+.section2--hebergement--vignette--case:hover
+{
+    transform: scale(1.04);
+    transition: 0.2s;
+}
+.section2--hebergement--vignette--case--img
+{
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    width: 95%;
+    height: 58%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.section2--hebergement--vignette--case h2
+{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 4%;
+}
+.section2--hebergement--vignette--case--txt2
+{
+    font-size: 0.9em;
+    margin-left: 4%;
+}
+.section2--hebergement--vignette--case--etoiles
+{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 4%;
+}
+.section2--hebergement--vignette--case--etoiles .fas
+{
+    
+    color: #0065FC;
+    margin-right: -5px;
+    transform: scale(0.8);
+}
+.section2--hebergement--vignette--case--etoiles .far
+{
+    color: rgb(153, 153, 153);
+    margin-right: -5px;
+    transform: scale(0.8);
 }
 
 /*Section cases populaires*/
@@ -214,7 +267,7 @@ p
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    grid-area: 9/26/21/40;
+    grid-area: 9/28/21/40;
 }
 .section25--titre
 {
@@ -232,6 +285,11 @@ p
     margin-bottom: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+.section25--vignette:hover
+{
+    transform:scale(1.04);
+    transition: 0.2s;
 }
 /*Section cases activités*/
 .section3
