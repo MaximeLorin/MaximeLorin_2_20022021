@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset= "utf-8" />
+        <title>Reservia | Acceuil</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="solid.css">
         <script src="https://kit.fontawesome.com/4c2d4e0893.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class= "hautPage">
             <img class= "hautPage--logo" src= "images/Reservia@3x.png" alt= "Logo">
             <div class= "hautPage--bouttons">
-                <div class= "hautPage--bouttons--texte"><a>Hébergements</a></div>
-                <div class= "hautPage--bouttons--texte"><a>Activités</a></div>
+                <div class= "hautPage--bouttons--texte"><a href="#section2">Hébergements</a></div>
+                <div class= "hautPage--bouttons--texte"><a href="#section3">Activités</a></div>
                 <div class= "hautPage--bouttons--texte hautPage--bouttons--texte_bleu"><a>S'inscrire</a></div>
             </div>
         </div>
@@ -22,7 +22,7 @@
             </div>
             <div class= "section1--recherche">
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="search" class="section1--recherche--inpt" name="q"aria-label="Search through site content">
+                <input type="search" class="section1--recherche--inpt" name="recherche" maxlength="12" placeholder= "Marseille, France">
                 <button class= "section1--recherche--boutton">Rechercher</button>
             </div>
             <div class= "section1--filtres">
@@ -34,7 +34,7 @@
             </div>
             <div class= "section1--info"><i class="fas fa-info"></i>Plus de 500 logements disponibles dans cette ville</div>
         </div>
-        <div class= "section2">
+        <div id= "section2">
             <div class= "section2--hebergement">
                 <div class= "section2--hebergement--titre"><h1>Hébergements à Marseille</h1></div>
                 <div class= "section2--hebergement--vignette">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class= "section2--hebergement--vignette--case">
-                        <div class= "section2--hebergement--vignette--case--img"><img class= "section2--hebergement--vignette--case--img" src= "images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt= "Hotel Port"></div>
+                        <img class= "section2--hebergement--vignette--case--img" src= "images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt= "Hotel Port">
                         <div class= "section2--hebergement--vignette--case--txt1"><h2>Hôtel du port</h2></div>
                         <div class= "section2--hebergement--vignette--case--txt2">Nuit à partir de 52€</div>
                         <div class= "section2--hebergement--vignette--case--etoiles">
@@ -59,11 +59,11 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
                     <div class= "section2--hebergement--vignette--case">
-                        <div class= "section2--hebergement--vignette--case--img"><img class= "section2--hebergement--vignette--case--img" src= "images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt= "Hotel mouettes"></div>
+                        <img class= "section2--hebergement--vignette--case--img" src= "images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt= "Hotel mouettes">
                         <div class= "section2--hebergement--vignette--case--txt1"><h2>Hôtel Les mouettes</h2></div>
                         <div class= "section2--hebergement--vignette--case--txt2">Nuit à partir de 76€</div>
                         <div class= "section2--hebergement--vignette--case--etoiles">
@@ -75,19 +75,19 @@
                         </div>
                     </div>
                     <div class= "section2--hebergement--vignette--case">
-                        <div class= "section2--hebergement--vignette--case--img"><img class= "section2--hebergement--vignette--case--img" src= "images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt= "Hotel mer"></div>
+                        <img class= "section2--hebergement--vignette--case--img" src= "images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt= "Hotel mer">
                         <div class= "section2--hebergement--vignette--case--txt1"><h2>Hôtel de la mer</h2></div>
                         <div class= "section2--hebergement--vignette--case--txt2">Nuit à partir de 46€</div>
                         <div class= "section2--hebergement--vignette--case--etoiles">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
                     </div>
                     <div class= "section2--hebergement--vignette--case">
-                        <div class= "section2--hebergement--vignette--case--img"><img class= "section2--hebergement--vignette--case--img" src= "images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt= "Auberge Panier"></div>
+                        <img class= "section2--hebergement--vignette--case--img" src= "images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt= "Auberge Panier">
                         <div class= "section2--hebergement--vignette--case--txt1"><h2>Le Panier</h2></div>
                         <div class= "section2--hebergement--vignette--case--txt2">Nuit à partir de 23€</div>
                         <div class= "section2--hebergement--vignette--case--etoiles">
@@ -95,11 +95,11 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
                     <div class= "section2--hebergement--vignette--case">
-                        <div class= "section2--hebergement--vignette--case--img"><img class= "section2--hebergement--vignette--case--img" src= "images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt= "Chez Amina"></div>
+                        <img class= "section2--hebergement--vignette--case--img" src= "images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt= "Chez Amina">
                         <div class= "section2--hebergement--vignette--case--txt1"><h2>Hôtel chez Amina</h2></div>
                         <div class= "section2--hebergement--vignette--case--txt2">Nuit à partir de 96€</div>
                         <div class= "section2--hebergement--vignette--case--etoiles">
@@ -120,77 +120,95 @@
                 <div class= "section25--titre--img"><i class="fas fa-chart-line"></i></div>
             </div>
             <div class= "section25--vignette">
-                <div class= "section25--vignette--img"><img></div>
+                <img class= "section25--vignette--img" src= "images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt= "Hotel soleil matin">
                 <div class= "section25--vignette--blcTxt">
-                    <div class= "section25--vignette--blcTxt-txt1">Hôtel Le soleil du matin</div>
+                    <div class= "section25--vignette--blcTxt-txt1"><h2>Hôtel Le soleil du matin</h2></div>
                     <div class= "section25--vignette--blcTxt-txt2">Nuit à partir de 128€</div>
-                    <div class= "section25--vignette--blcTxt-etoiles"><img></div>
+                    <div class= "section25--vignette--blcTxt-etoiles">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                 </div>
             </div>
             <div class= "section25--vignette">
-                <div class= "section25--vignette--img"><img></div>
+                <img class= "section25--vignette--img" src= "images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt= "Au coeur de l'eau">
                 <div class= "section25--vignette--blcTxt">
-                    <div class= "section25--vignette--blcTxt-txt1">Au coeur de l'eau Chambres d'hôtes</div>
+                    <div class= "section25--vignette--blcTxt-txt1"><h2>Au coeur de l'eau Chambres d'hôtes</h2></div>
                     <div class= "section25--vignette--blcTxt-txt2">Nuit à partir de 71€</div>
-                    <div class= "section25--vignette--blcTxt-etoiles"><img></div>
+                    <div class= "section25--vignette--blcTxt-etoiles">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </div>
             </div>
             <div class= "section25--vignette">
-                <div class= "section25--vignette--img"><img></div>
+                <img class= "section25--vignette--img" src= "images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt= "Hotel bleu blanc">
                 <div class= "section25--vignette--blcTxt">
-                    <div class= "section25--vignette--blcTxt-txt1">Hôtel Tout bleu et Blanc</div>
+                    <div class= "section25--vignette--blcTxt-txt1"><h2>Hôtel Tout bleu et Blanc</h2></div>
                     <div class= "section25--vignette--blcTxt-txt2">Nuit à partir de 68€</div>
-                    <div class= "section25--vignette--blcTxt-etoiles"><img></div>
+                    <div class= "section25--vignette--blcTxt-etoiles">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class= "section3">
-            <div class= "section3--titre">Activités à Marseille</div>
+        <div id= "section3">
+            <div class= "section3--titre"><h1>Activités à Marseille</h1></div>
             <div class= "section3--vignettes">
                 <div class= "section3--vignettes--grandeVignette">
-                    <div class= "section3--vignettes--grandeVignette--img"><img></div>
-                    <div class= "section3--vignettes--grandeVignette--txt">Vieux Port</div>
+                    <img class= "section3--vignettes--grandeVignette--img" src= "images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt= "Vieux Port">
+                    <h2>Vieux Port</h2> 
                 </div>
                 <div class= "section3--vignettes--petitesVignettes">
-                    <div class= "section3--vignettes--petitesVignettes--case">
-                        <div class= "section3--vignettes--grandeVignette--img"><img></div>
-                        <div class= "section3--vignettes--grandeVignette--txt">Fort de Pomègues</div>
+                    <div class= "section3--vignettes--petitesVignettes--case1">
+                        <img class= "section3--petitesVignettes--case--img1" src= "images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt= "Fort Pomègues">
+                        <h2>Fort de Pomègues</h2> 
                     </div>
-                    <div class= "section3--vignettes--petitesVignettes--case">
-                        <div class= "section3--vignettes--grandeVignette--img"><img></div>
-                        <div class= "section3--vignettes--grandeVignette--txt">Iles du Frioul</div>
+                    <div class= "section3--vignettes--petitesVignettes--case2">
+                        <img class= "section3--petitesVignettes--case--img2" src= "images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt= "Ile frioul">
+                        <h2>Iles du Frioul</h2> 
                     </div>
                 </div>
                 <div class= "section3--vignettes--grandeVignette">
-                    <div class= "section3--vignettes--grandeVignette--img"><img></div>
-                    <div class= "section3--vignettes--grandeVignette--txt">Parc National des Calanques</div>
+                    <img class= "section3--vignettes--grandeVignette--img" src= "images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt= "Calnques">
+                    <h2>Parc National des Calanques</h2>
                 </div>
                 <div class= "section3--vignettes--petitesVignettes">
                     <div class= "section3--vignettes--petitesVignettes--case">
-                        <div class= "section3--vignettes--grandeVignette--img"><img></div>
-                        <div class= "section3--vignettes--grandeVignette--txt">Notre-Dame-de-la-Garde</div>
+                        <img class= "section3--petitesVignettes--case--img" src= "images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt= "Notre Notre-Dame-de-la-Garde">
+                        <h2>Notre-Dame-de-la-Garde</h2> 
                     </div>
                     <div class= "section3--vignettes--petitesVignettes--case">
-                        <div class= "section3--vignettes--grandeVignette--img"><img></div>
-                        <div class= "section3--vignettes--grandeVignette--txt">Parc Longchamp</div>
+                        <img class= "section3--petitesVignettes--case--img" src= "images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt= "Longchamp">
+                        <h2>Parc Longchamp</h2>
                     </div>
                 </div>
             </div>
         </div>
         <div class= "basPage">
             <div class= "basPage--colonne">
-                <div class= "basPage--colonne--titre">A propos</div>
+                <h2>A propos</h2> 
                 <div class= "basPage--colonne--txt">Fonctionnement du site</div>
                 <div class= "basPage--colonne--txt">Conditions générales de vente</div>
                 <div class= "basPage--colonne--txt">Données et confidentialité</div>
             </div>
             <div class= "basPage--colonne">
-                <div class= "basPage--colonne--titre">Nos hébergements</div>
+                <h2>Nos hébergements</h2> 
                 <div class= "basPage--colonne--txt">Chartes qualité</div>
                 <div class= "basPage--colonne--txt">Soumettre votre hôtel</div>
             </div>
             <div class= "basPage--colonne">
-                <div class= "basPage--colonne--titre">Assistance</div>
+                <h2>Assistance</h2> 
                 <div class= "basPage--colonne--txt">Centre d'aide</div>
                 <div class= "basPage--colonne--txt">Nous contacter</div>
             </div>
