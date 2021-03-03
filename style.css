@@ -18,23 +18,23 @@ body
 }
 h1
 {
-    font-size: 1.2em;
+    font-size: 18pt;
     font-weight: 1000;
 }
 h2
 {
-    font-size: 1.05em;
+    font-size: 13pt;
     font-weight: 1000;
 }
 p
 {
-    font-size: 1em;
+    font-size: 12pt;
 }
-a:link
+a
 {
-    color: none;
-    text-decoration:none;
+    font-size: 12pt;
 }
+
 
 
 
@@ -43,40 +43,59 @@ a:link
 {
     grid-area: 1/2/3/40;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .hautPage--logo
 {
-    width: 100px;
-    height: 45px;
-    
+    width: 8%;
+    height: 50%;
+    margin-right: 54.5%;
 }
 .hautPage--bouttons
 {
-    
     display:flex;
-    width: 430px;
+    width: 25%;
     height: 100%;
     justify-content: space-around;
 }
 .hautPage--bouttons--texte
 {
     display:flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100%;
     transition: 0.2s;
+}
+.hautPage--bouttons a:any-link
+{
+    color:black;
+    text-decoration: none;
+}
+.hautPage--bouttons a:hover
+{
+    color: #0065FC;
 }
 .hautPage--bouttons--texte:hover
 {
     cursor: pointer;
     border-top: solid #0065FC;
-    color: #0065FC;
+    
 }
 .hautPage--bouttons--texte_bleu
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 12.5%;
     color: #0065FC;
     font-weight: bold;
+}
+.hautPage--bouttons--texte_bleu:hover
+{
+    cursor: pointer;
+    border-top: solid #0065FC;
 }
 
 /*Section recherche*/
@@ -138,7 +157,7 @@ a:link
     height: 100%;
     font-weight: bold;
     padding-left: 15px;
-    font-size: 1em;
+    font-size: 12pt;
 }
 .section1--filtres
 {
@@ -521,3 +540,143 @@ a:link
 {
     cursor: pointer;
 }
+
+@media screen and (max-width:1024px)
+{
+    body
+    {
+        margin:none;
+        width: 100%;
+        height: 100%;
+    }
+    h1
+    {
+        font-size: 30pt;
+    }
+    h2
+    {
+        font-size: 28pt;
+    }
+    p
+    {
+        font-size: 28pt;
+    }
+    a
+    {
+        font-size:28pt;
+    }
+
+    .hautPage
+    {
+        grid-area: 1/1/2/41;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+    }
+    .hautPage--logo
+    {
+        margin-top: 2%;
+        margin-left: 3%;
+        width: 20%;
+        height:48%
+    }
+    .hautPage--bouttons
+    {
+        width: 100%;
+    }
+    .hautPage--bouttons--texte:hover
+    {
+        border-top: none;
+        border-bottom:solid #0065FC;
+    }
+    .hautPage--bouttons--texte_bleu
+    {
+        position: absolute;
+        height: auto;
+        top: 50px;
+        right: 30px;
+    }
+    .hautPage--bouttons--texte_bleu:hover
+    {
+        border: none;
+    }
+
+    .section1
+    {
+        grid-area: 2/1/6/41;
+        height: 100%;
+        width: 96%;
+        margin-left: 2%;
+    }
+    .section1--titre
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .section1--recherche
+    {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        width: 85%;
+        height: 8%;
+    }
+    .section1--recherche--boutton
+    {
+        width: 11%;
+        border-radius: 15px;
+        color: transparent;
+    }
+    .section1--recherche--boutton:hover
+    {
+        color: transparent;
+    }
+    .section1--recherche i
+    {
+        width: 11%;
+    }
+    .section1--recherche--inpt
+    {
+        width: 88%;
+        font-size: 28pt;
+    }
+    .section1--filtres
+    {
+        width:90%;
+        height: 50%;
+        margin-left: 5%;
+        align-items: unset;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .section1--filtres--bouttons
+    {
+        width: 50%;
+        height: 20%;
+        border-radius: 100px;
+    }
+    .section1--filtres--bouttons i
+    {
+        width: 28%;
+        height: 100%;
+        border-radius: 100px;
+    }
+    #section2
+    {
+        grid-area: 9/1/22/41;
+    }
+
+    .section25
+    {
+        grid-area: 6/1/9/41;
+    }
+    #section3
+    {
+        grid-area: 21/1/35/41;
+    }
+    .basPage
+    {
+        grid-area: 36/1/41/41;
+    }
+}
+
