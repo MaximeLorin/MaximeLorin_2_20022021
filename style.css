@@ -328,9 +328,10 @@ a
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-top:7%;
-    margin-left: 7%;
-    margin-right:7%;
+    margin-top:6%;
+    margin-bottom: 1%;
+    margin-left: 8%;
+    margin-right:8%;
 }
 .section25--vignette
 {
@@ -339,7 +340,6 @@ a
     height: 150px;
     background-color: white;
     border-radius: 15px;
-    margin-top: 3.5%;
     margin-bottom: 5%;
     margin-right: auto;
     margin-left: auto;
@@ -525,6 +525,7 @@ a
     display: flex;
     justify-content: space-evenly;
     background-color: #F2F2F2;
+    margin-left:-17%;
     grid-area:36/1/41/41;
 }
 .basPage--colonne
@@ -625,6 +626,7 @@ a
     {
         width: 11%;
         border-radius: 15px;
+        font-size: 0pt;
         color: transparent;
     }
     .section1--recherche--boutton:hover
@@ -633,6 +635,7 @@ a
     }
     .section1--recherche i
     {
+        font-size: 28pt;
         width: 11%;
     }
     .section1--recherche--inpt
@@ -657,26 +660,149 @@ a
     }
     .section1--filtres--bouttons i
     {
-        width: 28%;
+        font-size: 28pt;
+        width: 24%;
         height: 100%;
         border-radius: 100px;
     }
     #section2
     {
-        grid-area: 9/1/22/41;
+        grid-area: 10/1/23/41;
     }
-
+    .section2--hebergement--vignette
+    {
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .section2--hebergement--vignette--case
+    {
+        width: 100%;
+        height: 450px;
+        margin-bottom: 8%;
+        border-radius: 30px;
+    }
+    .section2--hebergement--vignette--case--img
+    {
+        width: 97%;
+        margin-top: 1.5%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+    .section2--hebergement--vignette--case--txt2
+    {
+        font-size: 26pt;
+    }
+    .section2--hebergement--vignette--case--etoiles
+    {
+        font-size: 24pt;
+        margin-top: 0.5%;
+    }
     .section25
     {
-        grid-area: 6/1/9/41;
+        grid-area: 6/1/10/41;
+    }
+    .section25--titre
+    {
+        margin-left: 5%;
+        font-size: 28pt;
+    }
+    .section25--vignette
+    {
+        width: 90%;
+        height: 22%;
+        border-radius: 30px;
+    }
+    .section25--vignette h2
+    {
+        margin-right: 20%;
+    }
+    .section25--vignette--blcTxt-txt2
+    {
+        font-size: 26pt;
+    }
+    .section25--vignette--blcTxt-etoiles
+    {
+        margin-top: 20%;
+        font-size: 24pt;
     }
     #section3
     {
-        grid-area: 21/1/35/41;
+        width: 90%;
+        margin: 5%;
+        grid-area: 23/1/36/41;
+    }
+    .section3--vignettes
+    {
+        flex-direction: column;
+        justify-content: unset;
+        margin-top: 5%;
+    }
+    .section3--vignettes--grandeVignette
+    {
+        width: 100%;
+        height: 450px;
+    }
+    .section3--vignettes--petitesVignettes
+    {
+        justify-content: unset;
+        margin-top: 5%;
+        margin-bottom:5%;
+        width: 100%;
+        height: 25%;
+    }
+    .section3--vignettes--grandeVignette--img
+    {
+        height: 85%;
+    }
+    .section3--vignettes--grandeVignette h2
+    {
+        margin-top: 1%;
+    }
+    .section3--vignettes--petitesVignettes--case
+    {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 450px;
+        box-shadow: 1px 1px 6px #8686863b;
+    }
+    .section3--vignettes--petitesVignettes--case1
+    {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 450px;
+    }
+    .section3--petitesVignettes--case--img1
+    {
+        height: 85%;
+    }
+    .section3--vignettes--petitesVignettes--case2
+    {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 450px;
+    }
+    .section3--petitesVignettes--case--img2
+    {
+        height: 85%;
     }
     .basPage
     {
         grid-area: 36/1/41/41;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .basPage--colonne
+    {
+        margin-left: 5%;
+        margin-top: -50%;
+    }
+    .basPage--colonne--txt
+    {
+        font-size: 15pt;
     }
 }
 
