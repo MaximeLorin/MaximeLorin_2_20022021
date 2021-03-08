@@ -9,30 +9,30 @@
 body
 {
     width: 1366px;
-    height: 1884px;
+    height: 100vh;
     margin: auto; 
     padding: auto;
     font-family:Raleway;
     display: grid;
-    grid-template:repeat(40,1fr)/repeat(40,1fr) ;
+    grid-template:0.45fr 1.16fr 2.52fr 2.1fr 0.77fr/repeat(6,0142fr);
 }
 h1
 {
-    font-size: 18pt;
+    font-size: 1.2rem;
     font-weight: 1000;
 }
 h2
 {
-    font-size: 13pt;
+    font-size: 1.05rem;
     font-weight: 1000;
 }
 p
 {
-    font-size: 12pt;
+    font-size: 0.95rem;
 }
 a
 {
-    font-size: 12pt;
+    font-size: 0.95rem;
 }
 
 
@@ -41,22 +41,31 @@ a
 /*Partie menu*/
 .hautPage
 {
-    grid-area: 1/2/3/40;
+    grid-area: 1/1/2/7;
     display: flex;
     align-items: center;
+    margin: 25px;
+    margin-top: 0px;
 }
 .hautPage--logo
 {
-    width: 8%;
-    height: 50%;
+    width: 100px;
+    height: 45px;
     margin-right: 54.5%;
 }
 .hautPage--bouttons
 {
     display:flex;
     width: 25%;
-    height: 100%;
+    height: 80px;
     justify-content: space-around;
+    
+}
+.hautPage--bouttons--texte:hover
+{
+    cursor: pointer;
+    border-top: solid #0065FC;
+    
 }
 .hautPage--bouttons--texte
 {
@@ -65,6 +74,7 @@ a
     align-items: center;
     width: 100%;
     height: 100%;
+    border-top: solid #F2F2F2;
     transition: 0.2s;
 }
 .hautPage--bouttons a:any-link
@@ -72,16 +82,11 @@ a
     color:black;
     text-decoration: none;
 }
-.hautPage--bouttons a:hover
+.hautPage--bouttons :hover
 {
     color: #0065FC;
 }
-.hautPage--bouttons--texte:hover
-{
-    cursor: pointer;
-    border-top: solid #0065FC;
-    
-}
+
 .hautPage--bouttons--texte_bleu
 {
     display: flex;
@@ -89,6 +94,7 @@ a
     align-items: center;
     height: 100%;
     width: 12.5%;
+    border-top: solid #F2F2F2;
     color: #0065FC;
     font-weight: bold;
 }
@@ -101,7 +107,11 @@ a
 /*Section recherche*/
 .section1
 {
-    grid-area: 3/2/9/40;
+    grid-area: 2/1/3/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25px;
 }
 .section1--titre--txt p
 {
@@ -119,8 +129,14 @@ a
     height: 45px;
     border-radius: 15px;
 }
+.section1--recherche--boutton i
+{
+    opacity: 0%;
+    font-size: 0rem;
+}
 .section1--recherche--boutton
 {
+    padding-top: 12px;
     background-color: #0065FC;
     height: 100%;
     width: 145px;
@@ -131,6 +147,7 @@ a
     font-weight: bold;
     font-size: 1.05em;
 }
+
 .section1--recherche--boutton:hover
 {
     background-color: #DEEBFF ;
@@ -165,21 +182,26 @@ a
     width: 980px;
     height: 50px;
     align-items: center;
-    justify-content: space-between;
+}
+.section1--filtres h2
+{
+    margin-right: 5%;
 }
 .container--bouttons
 {
     height: 100%;
+    width: 700px;
     display: flex;
+    justify-content: space-between;
 }
 .section1--filtres--bouttons
 {
-    margin-right: 3%;
     display: flex;
     align-items: center;
-    width: 225px;
-    height: 45px;
-    border:solid 2px #F2F2F2;
+    min-width: 135px;
+    width: auto; 
+    height: 48px;
+    border:solid 1px #F2F2F2;
     border-radius: 25px;
     
 }
@@ -188,17 +210,19 @@ a
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
+    width: 51px;
     height: 48px;
     border-radius: 25px;
     background-color: #DEEBFF ;
     color: #0065FC;
-    margin-left: -3px;
+    margin-right: 10px;
+
 }
 .section1--filtres--bouttons h2
 {
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    font-size: 0.95em;
+    font-weight: bold;
 }
 
 .section1--filtres--bouttons:hover
@@ -234,7 +258,8 @@ a
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    grid-area : 9/2/22/26;
+    grid-area : 3/1/4/5;
+    margin: 25px;
 }
 .section2--hebergement
 {
@@ -301,13 +326,13 @@ a
 {
     color: #0065FC;
     margin-right: -5px;
-    transform: scale(0.8);
+    font-size: 10pt;
 }
 .section2--hebergement--vignette--case--etoiles .far
 {
     color: rgb(153, 153, 153);
     margin-right: -5px;
-    transform: scale(0.8);
+    font-size: 10pt;
 }
 .section2--affch
 {
@@ -324,17 +349,18 @@ a
 /*Section cases populaires*/
 .section25
 {
+    margin:25px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    grid-area: 9/28/22/40;
+    grid-area: 3/5/4/7;
 }
 .section25--titre
 {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-top:6%;
-    margin-bottom: 1%;
+    margin-top:7%;
+    margin-bottom: 2%;
     margin-left: 8%;
     margin-right:8%;
 }
@@ -357,7 +383,7 @@ a
 }
 .section25--vignette--blcTxt-txt2
 {
-    font-size: 0.9em;
+    font-size: 0.95rem;
     margin-top: -5%;
     margin-left: 7%;
 }
@@ -401,7 +427,8 @@ a
 /*Section cases activités*/
 #section3
 {
-    grid-area: 24/2/35/40;;
+    grid-area: 4/1/5/7;
+    margin: 25px;
 }
 .section3--vignettes
 {
@@ -535,7 +562,7 @@ a
     justify-content: space-evenly;
     background-color: #F2F2F2;
     margin-left:-17%;
-    grid-area:36/1/41/41;
+    grid-area:5/1/6/7;
 }
 .basPage--colonne
 {
@@ -550,31 +577,18 @@ a
 {
     cursor: pointer;
 }
-
-@media screen and (max-width:1024px)
+@media screen and (min-width:801px) and (max-width:1025px)
+{
+    
+}
+@media screen and (max-width:800px)
 {
     body
     {
-        grid-template:0.21fr 0.77fr 0.77fr 2.28fr 2.28fr 0.7fr/1fr;
+        grid-template:0.21fr 1.6fr 0.75fr 1.93fr 1.93fr 0.7fr/1fr;
         margin:none;
         width: 100%;
-        height: auto;
-    }
-    h1
-    {
-        font-size: 30pt;
-    }
-    h2
-    {
-        font-size: 28pt;
-    }
-    p
-    {
-        font-size: 28pt;
-    }
-    a
-    {
-        font-size:28pt;
+        margin: none;
     }
 
     .hautPage
@@ -583,18 +597,26 @@ a
         flex-direction: column;
         justify-content: unset;
         align-items: unset;
+        margin: 0%;
     }
     .hautPage--logo
     {
-        margin-top: 4%;
+        margin-right: none;
+        margin-top: 5%;
         margin-left: 5%;
-        width: 20%;
-        height:50%
+        width: 100px;
+        height:45px;
     }
     .hautPage--bouttons
     {
         width: 100%;
+        height: 50px;
+        margin-top: 5%;
         border-bottom:solid #F2F2F2;
+    }
+    .hautPage--bouttons--texte
+    {
+        border-top: none;
     }
     .hautPage--bouttons--texte:hover
     {
@@ -603,10 +625,11 @@ a
     }
     .hautPage--bouttons--texte_bleu
     {
+        border-top: none;
         position: absolute;
         height: auto;
-        top: 60px;
-        right: 70px;
+        top: 5%;
+        right: 10%;
     }
     .hautPage--bouttons--texte_bleu:hover
     {
@@ -618,27 +641,44 @@ a
         grid-area: 2/1/3/2;
         height: 100%;
         width: 96%;
+        margin-right: 2%;
         margin-left: 2%;
+        margin-top: 1%;
+        margin-bottom: 10%;
     }
     .section1--titre
     {
         width: 90%;
+        margin-top: 5%;
         margin-left: 5%;
     }
     .section1--recherche
     {
-        margin-top: 10%;
-        margin-bottom: 6%;
+        margin-top: 6%;
+        margin-bottom: 3%;
         margin-left: 5%;
         width: 85%;
-        height: 8%;
+        height: 50px;
     }
     .section1--recherche--boutton
-    {
-        width: 15%;
-        border-radius: 25px;
+    {   
+        padding-top: 0px;
+        width: 17%;
+        border-radius: 15px;
         font-size: 0pt;
         color: transparent;
+    }
+    .section1--recherche--boutton i
+    {
+        opacity: 100%;
+        padding-left: 50%;
+        padding-top: 0%;
+        background-color: transparent;
+        color: white ;
+    }
+    .section1--recherche--boutton i:hover
+    {
+        color: #0065FC ;
     }
     .section1--recherche--boutton:hover
     {
@@ -646,20 +686,19 @@ a
     }
     .section1--recherche i
     {
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
-        font-size: 28pt;
-        width: 15%;
+        font-size: 12pt;
+        width: 17%;
     }
     .section1--recherche--inpt
     {
-        width: 88%;
-        font-size: 28pt;
+        width: 85%;
+        font-size: 1.05rem
     }
+    
     .section1--filtres
     {
         width:90%;
-        height: 55%;
+        height: 50%;
         margin-left: 5%;
         align-items: unset;
         flex-direction: column;
@@ -667,21 +706,17 @@ a
     }
     .container--bouttons
     {
-        height: 80%;
-        flex-direction: column;
-        justify-content:space-between;
+        flex-wrap: wrap;
+        width:90%;
+        height: 75%;
     }
     .section1--filtres--bouttons
     {
-        margin-right: 0%;
-        width:50%;
-        height: 20%;
         border-radius: 100px;
     }
     .section1--filtres--bouttons i
     {
-        font-size: 28pt;
-        width: 105px;
+        font-size: 12pt;
         height: 100%;
         border-radius: 100px;
     }
@@ -689,20 +724,20 @@ a
     {
         width: auto;
         height: auto;
-        margin-top: -3%;
+        margin-top: -15px;
         align-items:space-between;
         margin-left: 5%;
         margin-right: 5%;
     }
     .section1--info i
     {
-        font-size: 20pt;
+        font-size: 1rem;
         margin-bottom: 5.5%;
         margin-right: 3%;
-        width: 4%;
-        height: 100%;
+        width: 20px;
+        height: 20px;
         border-radius:100%;
-        border:solid #F2F2F2;
+        border:1px #F2F2F2;
     }
     #section2
     {
@@ -710,7 +745,11 @@ a
         background-color: white;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        margin: 0%;
+    }
+    .section2--hebergement
+    {
+        height: 95%;
     }
     .section2--hebergement--vignette
     {
@@ -729,7 +768,7 @@ a
     .section2--hebergement--vignette--case
     {
         width: 100%;
-        height: 470px;
+        height: 12%;
         margin-bottom: 8%;
         border-radius: 30px;
     }
@@ -744,46 +783,46 @@ a
     }
     .section2--hebergement--vignette--case--txt2
     {
-        font-size: 26pt;
+        font-size: 1.05rem;
     }
     .section2--hebergement--vignette--case--etoiles
     {
-        
         margin-top: 0.5%;
     }
-    .section25--vignette--blcTxt-etoiles .far
+    .section2--hebergement--vignette--case--etoiles .fas
     {
-        font-size: 24pt;
+        font-size: 12pt;
     }
-    .section25--vignette--blcTxt-etoiles .fas
+    .section2--hebergement--vignette--case--etoiles .far
     {
-        font-size: 24pt;
+        font-size: 12pt;
     }
+
     .section25
     {
         grid-area: 3/1/4/2;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        margin: 0%;
+        border-radius: 0px;
     }
     .section25--titre
     {
         margin-bottom: 4%;
         margin-left: 5%;
-        font-size: 28pt;
+        font-size: 1.2rem;
     }
     .section25--vignette
     {
         width: 90%;
-        height: 20%;
-        border-radius: 40px;
+        height: 25%;
+
         align-items: center;
     }
     .section25--vignette--img
     {
         margin-left: 1%;
-        border-top-left-radius: 40px;
-        border-bottom-left-radius: 40px;
     }
     .section25--vignette h2
     {
@@ -792,12 +831,19 @@ a
     }
     .section25--vignette--blcTxt-txt2
     {
-        font-size: 26pt;
+        font-size: 0.95rem;
     }
     .section25--vignette--blcTxt-etoiles
     {
         margin-top: 14%;
-        font-size: 24pt;
+    }
+    .section25--vignette--blcTxt-etoiles .far
+    {
+        font-size: 8pt;
+    }
+    .section25--vignette--blcTxt-etoiles .fas
+    {
+        font-size: 8pt;
     }
     #section3
     {
@@ -807,7 +853,11 @@ a
         grid-area: 5/1/6/41;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: unset;
+    }
+    #section3 h1
+    {
+        margin-bottom: 6%;
     }
     .section3--vignettes
     {
@@ -816,12 +866,14 @@ a
     .section3--vignettes--grandeVignette
     {
         width: 100%;
-        height: 450px;
+        height: 230px;
+        margin-bottom: 5%;
     }
     .section3--vignettes--petitesVignettes
     {
         width: 100%;
-        height: 31%;
+        height: 45%;
+        margin-bottom: 5%;
     }
     .section3--vignettes--grandeVignette--img
     {
@@ -833,12 +885,14 @@ a
     }
     .section3--vignettes--petitesVignettes--case
     {
-        height: 450px;
+        margin-bottom: 5%;
+        height: 230px;
         box-shadow: 1px 1px 6px #8686863b;
     }
     .section3--vignettes--petitesVignettes--case1
     {
-        height: 450px;
+        
+        height: 230px;
     }
     .section3--petitesVignettes--case--img1
     {
@@ -846,7 +900,8 @@ a
     }
     .section3--vignettes--petitesVignettes--case2
     {
-        height: 450px;
+        margin-top: 5%;
+        height: 230px;
     }
     .section3--petitesVignettes--case--img2
     {
@@ -861,11 +916,12 @@ a
     .basPage--colonne
     {
         margin-left: 5%;
-        
+        margin-top: 0%;
     }
     .basPage--colonne--txt
     {
-        font-size: 24pt;
+        font-size: 0.95rem;
+        margin-bottom: 1%;
     }
 }
 
