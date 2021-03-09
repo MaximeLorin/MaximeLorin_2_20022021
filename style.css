@@ -14,7 +14,7 @@ body
     padding: auto;
     font-family:Raleway;
     display: grid;
-    grid-template:0.45fr 1.16fr 2.52fr 2.1fr 0.77fr/repeat(6,0142fr);
+    grid-template:0.45fr 1.16fr 2.29fr 2.1fr 1fr 0fr/1.33fr 0.67fr;
 }
 h1
 {
@@ -34,24 +34,31 @@ a
 {
     font-size: 0.95rem;
 }
-
+.boldPrice
+{
+    font-weight: bold;
+}
 
 
 
 /*Partie menu*/
 .hautPage
 {
-    grid-area: 1/1/2/7;
+    grid-area: 1/1/2/3;
     display: flex;
     align-items: center;
     margin: 25px;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 .hautPage--logo
 {
+    margin-right: 55%;
+}
+.hautPage--logo img
+{
     width: 100px;
     height: 45px;
-    margin-right: 54.5%;
 }
 .hautPage--bouttons
 {
@@ -61,12 +68,7 @@ a
     justify-content: space-around;
     
 }
-.hautPage--bouttons--texte:hover
-{
-    cursor: pointer;
-    border-top: solid #0065FC;
-    
-}
+
 .hautPage--bouttons--texte
 {
     display:flex;
@@ -74,18 +76,22 @@ a
     align-items: center;
     width: 100%;
     height: 100%;
+    font-size: 0.95rem;
     border-top: solid #F2F2F2;
     transition: 0.2s;
+}
+.hautPage--bouttons--texte:hover
+{
+    color: #0065FC;
+    cursor: pointer;
+    border-top: solid #0065FC;
 }
 .hautPage--bouttons a:any-link
 {
     color:black;
     text-decoration: none;
 }
-.hautPage--bouttons :hover
-{
-    color: #0065FC;
-}
+
 
 .hautPage--bouttons--texte_bleu
 {
@@ -107,7 +113,7 @@ a
 /*Section recherche*/
 .section1
 {
-    grid-area: 2/1/3/7;
+    grid-area: 2/1/3/3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -130,7 +136,8 @@ a
     border-radius: 15px;
 }
 .section1--recherche--boutton i
-{
+{   
+    transform: scale(0);
     opacity: 0%;
     font-size: 0rem;
 }
@@ -182,10 +189,11 @@ a
     width: 980px;
     height: 50px;
     align-items: center;
+    margin-top: 10px;
 }
 .section1--filtres h2
 {
-    margin-right: 5%;
+    margin-right: 3%;
 }
 .container--bouttons
 {
@@ -198,9 +206,8 @@ a
 {
     display: flex;
     align-items: center;
-    min-width: 135px;
-    width: auto; 
-    height: 48px;
+
+    height: 41px;
     border:solid 1px #F2F2F2;
     border-radius: 25px;
     
@@ -210,18 +217,17 @@ a
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 51px;
-    height: 48px;
-    border-radius: 25px;
+    width: 65px;
+    height: 41px;
+    border-radius: 100%;
     background-color: #DEEBFF ;
     color: #0065FC;
-    margin-right: 10px;
-
 }
 .section1--filtres--bouttons h2
 {
-    width: auto;
-    font-size: 0.95em;
+    padding-left: 5px;
+    width: 110%;
+    font-size: 0.95rem;
     font-weight: bold;
 }
 
@@ -249,7 +255,7 @@ a
     margin-right: 5px;
     margin-left: 5px;
     border: solid 1px #F2F2F2;
-    border-radius:25px;
+    border-radius:100%;
 }
 
 
@@ -258,7 +264,7 @@ a
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    grid-area : 3/1/4/5;
+    grid-area : 3/1/4/2;
     margin: 25px;
 }
 .section2--hebergement
@@ -352,7 +358,8 @@ a
     margin:25px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    grid-area: 3/5/4/7;
+    grid-area: 3/2/4/3;
+    
 }
 .section25--titre
 {
@@ -367,8 +374,8 @@ a
 .section25--vignette
 {
     display: flex;
-    width: 350px;
-    height: 150px;
+    width: 85%;
+    height: 140px;
     background-color: white;
     border-radius: 15px;
     margin-bottom: 5%;
@@ -390,7 +397,7 @@ a
 .section25--vignette--blcTxt-etoiles
 {
     color: #0065FC;
-    margin-top: 23%;
+    margin-top: 40px;
     margin-left: 7%;
     padding-right: 0.54%;
 }
@@ -427,7 +434,7 @@ a
 /*Section cases activités*/
 #section3
 {
-    grid-area: 4/1/5/7;
+    grid-area: 4/1/5/3;
     margin: 25px;
 }
 .section3--vignettes
@@ -462,7 +469,7 @@ a
 .section3--vignettes--grandeVignette h2
 {
     margin-left: 3%;
-    margin-top: 3%;
+    margin-top: 15px;
 }
 .section3--vignettes--petitesVignettes
 {
@@ -518,17 +525,17 @@ a
 .section3--vignettes--petitesVignettes--case h2
 {
     margin-left: 2%;
-    margin-top:2%;
+    margin-top:15px;
 }
 .section3--vignettes--petitesVignettes--case1 h2
 {
     margin-left: 2%;
-    margin-top:2%;
+    margin-top:15px;
 }
 .section3--vignettes--petitesVignettes--case2 h2
 {
     margin-left: 2%;
-    margin-top:2%;
+    margin-top:15px;
 }
 .section3--petitesVignettes--case--img
 {
@@ -559,38 +566,417 @@ a
 .basPage
 {
     display: flex;
-    justify-content: space-evenly;
     background-color: #F2F2F2;
-    margin-left:-17%;
-    grid-area:5/1/6/7;
+    grid-area:5/1/6/3;
 }
 .basPage--colonne
 {
-    margin-top: 3%;
+    width: 350px;
+    margin-right: 10%;
+    margin-left: 1.7%;
+    margin-top: 1%;
+    margin-bottom: 5%;
 }
 .basPage--colonne--txt
 {
+    width: 100%;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 .basPage--colonne--txt:hover
 {
+    color: grey;
     cursor: pointer;
 }
-@media screen and (min-width:801px) and (max-width:1025px)
-{
-    
-}
-@media screen and (max-width:800px)
+
+/*TOUCH PAD*/
+
+@media screen and (min-width:601px) and (max-width:1024px)
 {
     body
     {
-        grid-template:0.21fr 1.6fr 0.75fr 1.93fr 1.93fr 0.7fr/1fr;
         margin:none;
         width: 100%;
-        margin: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.21fr 0.69fr 2.33fr 2.31fr 0.7fr;
+
     }
 
+    .hautPage
+    {
+        grid-area: 1/1/2/3;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        margin: 0%;
+    }
+    .hautPage--logo
+    {
+        margin-right: none;
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 100px;
+        height:45px;
+    }
+    .hautPage--bouttons
+    {
+        width: 100%;
+        height: 50px;
+        margin-top: 5%;
+        border-bottom:solid #F2F2F2;
+    }
+    .hautPage--bouttons--texte
+    {
+        border-top: none;
+    }
+    .hautPage--bouttons--texte:hover
+    {
+        border-top: none;
+        border-bottom:solid #0065FC;
+    }
+    .hautPage--bouttons--texte_bleu
+    {
+        border-top: none;
+        position: absolute;
+        height: auto;
+        top: 5%;
+        right: 10%;
+    }
+    .hautPage--bouttons--texte_bleu:hover
+    {
+        border: none;
+    }
+
+    .section1
+    {
+        grid-area: 2/1/3/3;
+        height: 100%;
+        width: 96%;
+        margin-top: 15px;
+        margin-right: 2%;
+        margin-left: 2%;
+        align-items: center;
+    }
+    .section1--titre
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .section1--recherche
+    {
+        margin-top: 6%;
+        margin-bottom: 3%;
+        margin-left: 5%;
+        width: 50%;
+        height: 50px;
+    }
+    .section1--recherche--boutton
+    {   
+        padding-top: 0px;
+        width: 17%;
+        border-radius: 15px;
+        font-size: 0pt;
+        color: transparent;
+    }
+    .section1--recherche--boutton i
+    {
+        transform: scale(1);
+        opacity: 100%;
+        padding-left: 45%;
+        padding-top: 0%;
+        background-color: transparent;
+        color: white ;
+    }
+    .section1--recherche--boutton i:hover
+    {
+        color: #0065FC ;
+    }
+    .section1--recherche--boutton:hover
+    {
+        color: transparent;
+    }
+    .section1--recherche i
+    {
+        font-size: 12pt;
+        width: 17%;
+    }
+    .section1--recherche--inpt
+    {
+        width: 85%;
+        font-size: 1.05rem
+    }
+    
+    .section1--filtres
+    {
+        width:90%;
+        height: 35%;
+        margin-left: 5%;
+        margin-top: 0%;
+        align-items: unset;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .container--bouttons
+    {
+        flex-wrap: wrap;
+        width:90%;
+        height: 75%;
+    }
+    .section1--filtres--bouttons
+    {
+        border-radius: 100px;
+    }
+    .section1--filtres--bouttons i
+    {
+        font-size: 12pt;
+        height: 100%;
+        border-radius: 100px;
+    }
+    .section1--info
+    {
+        width: 90%;
+        height: 50px;
+        align-items:space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .section1--info p 
+    {
+        margin-top: 0%;
+    }
+    .section1--info i
+    {
+        font-size: 1rem;
+        margin-bottom: 3%;
+        margin-right: 1%;
+        width: 20px;
+        height: 20px;
+        border-radius:100%;
+        border:1px #F2F2F2;
+    }
+    #section2
+    {
+        grid-area: 4/1/5/3;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        height: 100%;
+    }
+    .section2--hebergement
+    {
+        height: 95%;
+    }
+    .section2--hebergement--vignette
+    {
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .section2--hebergement--titre
+    {
+        margin-left: 1%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .section2--hebergement--vignette--case
+    {
+        width: 60%;
+        height: 235px;
+        margin-bottom: 3%;
+    }
+    .section2--hebergement--vignette--case h2 
+    {
+        margin-top: 1px;
+    }
+    .section2--hebergement--vignette--case--img
+    {
+        width: 97%;
+        margin-top: 1.5%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+
+    }
+    .section2--hebergement--vignette--case--txt2
+    {
+        font-size: 1.05rem;
+    }
+    .section2--hebergement--vignette--case--etoiles
+    {
+        margin-top: 0.5%;
+    }
+    .section2--hebergement--vignette--case--etoiles .fas
+    {
+        font-size: 10pt;
+    }
+    .section2--hebergement--vignette--case--etoiles .far
+    {
+        font-size: 10pt;
+    }
+    .section2--affch h2
+    {
+        margin-top: 0%;
+    }
+
+    .section25
+    {
+        grid-area: 3/1/4/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0%;
+        border-radius: 0px;
+    }
+    .section25--titre
+    {
+        margin-bottom: 4%;
+        margin-left: 5%;
+        font-size: 1.2rem;
+    }
+    .section25--vignette
+    {
+        width: 60%;
+        height: 20%;
+
+        align-items: center;
+    }
+    .section25--vignette--img
+    {
+        margin-left: 1%;
+    }
+    .section25--vignette h2
+    {
+        margin-top: -3%;
+        margin-right: 20%;
+    }
+    .section25--vignette--blcTxt-txt2
+    {
+        font-size: 0.95rem;
+    }
+    .section25--vignette--blcTxt-etoiles
+    {
+        margin-top: 14%;
+    }
+    .section25--vignette--blcTxt-etoiles .far
+    {
+        font-size: 10pt;
+    }
+    .section25--vignette--blcTxt-etoiles .fas
+    {
+        font-size: 10pt;
+    }
+    #section3
+    {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-area: 5/1/6/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+    }
+    #section3 h1
+    {
+        margin-bottom: 6%;
+    }
+    .section3--vignettes
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section3--vignettes--grandeVignette
+    {
+        width: 60%;
+        height: 220px;
+        margin-bottom: 5%;
+    }
+    .section3--vignettes--petitesVignettes
+    {
+        align-items: center;
+        width: 100%;
+        height: 45%;
+        margin-bottom: 5%;
+    }
+    .section3--vignettes--grandeVignette--img
+    {
+        height: 85%;
+    }
+    .section3--vignettes--grandeVignette h2
+    {
+        margin-top: 3px;
+    }
+    .section3--vignettes--petitesVignettes--case
+    {
+        width: 60%;
+        margin-bottom: 5%;
+        height: 220px;
+        box-shadow: 1px 1px 6px #8686863b;
+    }
+    .section3--vignettes--petitesVignettes--case1
+    {
+        width: 60%;
+        height: 220px;
+    }
+    .section3--vignettes--petitesVignettes--case h2
+    {
+        margin-top: 3px;
+    }
+    .section3--vignettes--petitesVignettes--case1 h2
+    {
+        margin-top: 3px;
+    }
+    .section3--vignettes--petitesVignettes--case2 h2
+    {
+        margin-top: 3px;
+    }
+    .section3--petitesVignettes--case--img1
+    {
+        height: 85%;
+    }
+    .section3--vignettes--petitesVignettes--case2
+    {
+        width: 60%;
+        margin-top: 5%;
+        height: 195px;
+    }
+    .section3--petitesVignettes--case--img2
+    {
+        height: 85%;
+    }
+    .basPage
+    {
+        grid-area: 6/1/7/3;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        height: 100%;
+    }
+    .basPage--colonne
+    {
+        margin-left: 5%;
+        margin-top: 0%;
+    }
+    .basPage--colonne--txt
+    {
+        font-size: 0.95rem;
+        margin-bottom: 1%;
+    }
+}
+
+/*MOBILE*/
+
+@media screen and (max-width:600px)
+{
+    body
+    {
+        margin:none;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.21fr 0.77fr 2.28fr 2.28fr 0.7fr;
+    }
     .hautPage
     {
         grid-area: 1/1/2/2;
@@ -670,8 +1056,9 @@ a
     }
     .section1--recherche--boutton i
     {
+        transform: scale(1);
         opacity: 100%;
-        padding-left: 50%;
+        padding-left: 45%;
         padding-top: 0%;
         background-color: transparent;
         color: white ;
@@ -691,7 +1078,7 @@ a
     }
     .section1--recherche--inpt
     {
-        width: 85%;
+        width: 80%;
         font-size: 1.05rem
     }
     
@@ -746,6 +1133,7 @@ a
         display: flex;
         flex-direction: column;
         margin: 0%;
+        height: 100%;
     }
     .section2--hebergement
     {
@@ -768,9 +1156,9 @@ a
     .section2--hebergement--vignette--case
     {
         width: 100%;
-        height: 12%;
+        height: 195px;
         margin-bottom: 8%;
-        border-radius: 30px;
+        
     }
     .section2--hebergement--vignette--case--img
     {
@@ -778,8 +1166,7 @@ a
         margin-top: 1.5%;
         margin-left: 1.5%;
         margin-right: 1.5%;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
+
     }
     .section2--hebergement--vignette--case--txt2
     {
@@ -791,11 +1178,15 @@ a
     }
     .section2--hebergement--vignette--case--etoiles .fas
     {
-        font-size: 12pt;
+        font-size: 10pt;
     }
     .section2--hebergement--vignette--case--etoiles .far
     {
-        font-size: 12pt;
+        font-size: 10pt;
+    }
+    .section2--affch h2
+    {
+        margin-top: 0%;
     }
 
     .section25
@@ -839,18 +1230,18 @@ a
     }
     .section25--vignette--blcTxt-etoiles .far
     {
-        font-size: 8pt;
+        font-size: 10pt;
     }
     .section25--vignette--blcTxt-etoiles .fas
     {
-        font-size: 8pt;
+        font-size: 10pt;
     }
     #section3
     {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
-        grid-area: 5/1/6/41;
+        grid-area: 5/1/6/3;
         display: flex;
         flex-direction: column;
         justify-content: unset;
@@ -866,7 +1257,7 @@ a
     .section3--vignettes--grandeVignette
     {
         width: 100%;
-        height: 230px;
+        height: 195px;
         margin-bottom: 5%;
     }
     .section3--vignettes--petitesVignettes
@@ -885,14 +1276,23 @@ a
     }
     .section3--vignettes--petitesVignettes--case
     {
+       
         margin-bottom: 5%;
-        height: 230px;
+        height: 195px;
         box-shadow: 1px 1px 6px #8686863b;
+    }
+    .section3--vignettes--petitesVignettes--case h2 
+    {
+        margin-top: 1px;
     }
     .section3--vignettes--petitesVignettes--case1
     {
         
-        height: 230px;
+        height: 195px;
+    }
+    .section3--vignettes--petitesVignettes--case1 h2 
+    {
+        margin-top: 1px;
     }
     .section3--petitesVignettes--case--img1
     {
@@ -900,8 +1300,13 @@ a
     }
     .section3--vignettes--petitesVignettes--case2
     {
+        
         margin-top: 5%;
-        height: 230px;
+        height: 195px;
+    }
+    .section3--vignettes--petitesVignettes--case2 h2 
+    {
+        margin-top: 1px;
     }
     .section3--petitesVignettes--case--img2
     {
@@ -912,6 +1317,7 @@ a
         grid-area: 6/1/7/2;
         flex-direction: column;
         margin-left: 0;
+        height: 100%;
     }
     .basPage--colonne
     {
