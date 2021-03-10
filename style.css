@@ -12,7 +12,7 @@ body
     height: 100vh;
     margin: auto; 
     padding: auto;
-    font-family:Raleway;
+    font-family:"Raleway", Arial, Helvetica, sans-serif;
     display: grid;
     grid-template:0.45fr 1.16fr 2.29fr 2.1fr 1fr 0fr/1.33fr 0.67fr;
 }
@@ -88,11 +88,13 @@ a
 }
 .hautPage--bouttons a:any-link
 {
-    color:black;
+    color: black;
     text-decoration: none;
 }
-
-
+.hautPage--bouttons--texte:hover a
+{
+    color: #0065FC;
+}
 .hautPage--bouttons--texte_bleu
 {
     display: flex;
@@ -111,7 +113,7 @@ a
 }
 
 /*Section recherche*/
-.section1
+.sectionRecherche
 {
     grid-area: 2/1/3/3;
     display: flex;
@@ -119,12 +121,12 @@ a
     justify-content: space-between;
     margin: 25px;
 }
-.section1--titre--txt p
+.sectionRecherche--titre--txt p
 {
     height: 20px;
     margin-top: -5px;
 }
-.section1--recherche
+.sectionRecherche--recherche
 {
     display: flex;
     align-items: center;
@@ -135,13 +137,13 @@ a
     height: 45px;
     border-radius: 15px;
 }
-.section1--recherche--boutton i
+.sectionRecherche--recherche--boutton i
 {   
     transform: scale(0);
     opacity: 0%;
     font-size: 0rem;
 }
-.section1--recherche--boutton
+.sectionRecherche--recherche--boutton
 {
     padding-top: 12px;
     background-color: #0065FC;
@@ -155,14 +157,14 @@ a
     font-size: 1.05em;
 }
 
-.section1--recherche--boutton:hover
+.sectionRecherche--recherche--boutton:hover
 {
     background-color: #DEEBFF ;
     color: #0065FC ;
     cursor: pointer;
     transition: 0.3s;
 }
-.section1--recherche i
+.sectionRecherche--recherche i
 {
     display:flex;
     align-items: center;
@@ -174,7 +176,7 @@ a
     height: 100%;
     width: 45px;
 }
-.section1--recherche--inpt
+.sectionRecherche--recherche--inpt
 {
     border:none;
     width: 235px;
@@ -183,7 +185,7 @@ a
     padding-left: 15px;
     font-size: 12pt;
 }
-.section1--filtres
+.sectionRecherche--filtres
 {
     display: flex;
     width: 980px;
@@ -191,7 +193,7 @@ a
     align-items: center;
     margin-top: 10px;
 }
-.section1--filtres h2
+.sectionRecherche--filtres h2
 {
     margin-right: 3%;
 }
@@ -202,7 +204,7 @@ a
     display: flex;
     justify-content: space-between;
 }
-.section1--filtres--bouttons
+.sectionRecherche--filtres--bouttons
 {
     display: flex;
     align-items: center;
@@ -212,7 +214,7 @@ a
     border-radius: 25px;
     
 }
-.section1--filtres--bouttons i
+.sectionRecherche--filtres--bouttons i
 {
     display:flex;
     align-items: center;
@@ -223,7 +225,7 @@ a
     background-color: #DEEBFF ;
     color: #0065FC;
 }
-.section1--filtres--bouttons h2
+.sectionRecherche--filtres--bouttons h2
 {
     padding-left: 5px;
     width: 110%;
@@ -231,20 +233,20 @@ a
     font-weight: bold;
 }
 
-.section1--filtres--bouttons:hover
+.sectionRecherche--filtres--bouttons:hover
 {
     cursor: pointer;
     transform: scale(1.04);
     transition: 0.2s;
     background-color: #F2F2F2;
 }
-.section1--info
+.sectionRecherche--info
 {
     margin-top: 20px;
     display: flex;
     align-items: center;
 }
-.section1--info i 
+.sectionRecherche--info i 
 { 
     color: #0065FC;
     display: flex;
@@ -260,32 +262,32 @@ a
 
 
 /*Section cases hébergements*/
-#section2
+#sectionHebergements
 {
     background-color: #F2F2F2;
     border-radius: 20px;
     grid-area : 3/1/4/2;
     margin: 25px;
 }
-.section2--hebergement
+.sectionHebergements--hebergement
 {
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.section2--hebergement--titre
+.sectionHebergements--hebergement--titre
 {
     margin-bottom: 2.5%;
 }
-.section2--hebergement--vignette
+.sectionHebergements--hebergement--vignette
 {
     display: flex;
     flex-wrap: wrap;
     height: 440px;
     justify-content: space-between;
 }
-.section2--hebergement--vignette--case
+.sectionHebergements--hebergement--vignette--case
 {
     background-color: white;
     width: 240px;
@@ -293,14 +295,14 @@ a
     border-radius: 20px;
     box-shadow: 1px 1px 6px #8686863b;
 }
-.section2--hebergement--vignette--case:hover
+.sectionHebergements--hebergement--vignette--case:hover
 {
     cursor: pointer;
     background-color: #f2f2f2af;
     transform: scale(1.04);
     transition: 0.2s;
 }
-.section2--hebergement--vignette--case--img
+.sectionHebergements--hebergement--vignette--case--img
 {
     margin-right: 2.5%;
     margin-left: 2.5%;
@@ -311,41 +313,41 @@ a
     border-top-left-radius: 20px;
     object-fit: cover;
 }
-.section2--hebergement--vignette--case h2
+.sectionHebergements--hebergement--vignette--case h2
 {
     margin-top: 1.5%;
     margin-bottom: 1.5%;
     margin-left: 4%;
 }
-.section2--hebergement--vignette--case--txt2
+.sectionHebergements--hebergement--vignette--case--txt2
 {
     font-size: 0.9em;
     margin-left: 4%;
 }
-.section2--hebergement--vignette--case--etoiles
+.sectionHebergements--hebergement--vignette--case--etoiles
 {
     margin-top: 1%;
     margin-bottom: 1%;
     margin-left: 4%;
 }
-.section2--hebergement--vignette--case--etoiles .fas
+.sectionHebergements--hebergement--vignette--case--etoiles .fas
 {
     color: #0065FC;
     margin-right: -5px;
     font-size: 10pt;
 }
-.section2--hebergement--vignette--case--etoiles .far
+.sectionHebergements--hebergement--vignette--case--etoiles .far
 {
     color: rgb(153, 153, 153);
     margin-right: -5px;
     font-size: 10pt;
 }
-.section2--affch
+.sectionHebergements--affch
 {
     margin-top: 3%;
     margin-left:1%;
 }
-.section2--affch:hover
+.sectionHebergements--affch:hover
 {
     cursor: pointer;
     transform: scale(1.02);
@@ -353,7 +355,7 @@ a
 }
 
 /*Section cases populaires*/
-.section25
+.sectionPopulaires
 {
     margin:25px;
     background-color: #F2F2F2;
@@ -361,7 +363,7 @@ a
     grid-area: 3/2/4/3;
     
 }
-.section25--titre
+.sectionPopulaires--titre
 {
     display:flex;
     justify-content: space-between;
@@ -371,7 +373,7 @@ a
     margin-left: 8%;
     margin-right:8%;
 }
-.section25--vignette
+.sectionPopulaires--vignette
 {
     display: flex;
     width: 85%;
@@ -383,46 +385,46 @@ a
     margin-left: auto;
     box-shadow: 1px 1px 6px #8686863b;
 }
-.section25--vignette h2
+.sectionPopulaires--vignette h2
 {
     margin-top: 7%;
     margin-left: 7%;
 }
-.section25--vignette--blcTxt-txt2
+.sectionPopulaires--vignette--blcTxt-txt2
 {
     font-size: 0.95rem;
     margin-top: -5%;
     margin-left: 7%;
 }
-.section25--vignette--blcTxt-etoiles
+.sectionPopulaires--vignette--blcTxt-etoiles
 {
     color: #0065FC;
     margin-top: 40px;
     margin-left: 7%;
     padding-right: 0.54%;
 }
-.section25--vignette--blcTxt-etoiles .far
+.sectionPopulaires--vignette--blcTxt-etoiles .far
 {
     color: rgb(153, 153, 153);
     font-size: 10pt;
     
 }
-.section25--vignette--blcTxt-etoiles .fas
+.sectionPopulaires--vignette--blcTxt-etoiles .fas
 {
     color: #0065FC;
     font-size: 10pt;
 }
 
-.section25--vignette:hover
+.sectionPopulaires--vignette:hover
 {
     cursor: pointer;
     background-color: #f2f2f2af;
     transform:scale(1.04);
     transition: 0.2s;
 }
-.section25--vignette--img
+.sectionPopulaires--vignette--img
 {
-    width: 38%;
+    width: 120px;
     height: 94%;
     margin-left: 1.5%;
     margin-top: 1.5%;
@@ -432,33 +434,33 @@ a
     object-fit: cover;
 }
 /*Section cases activités*/
-#section3
+#sectionActivites
 {
     grid-area: 4/1/5/3;
     margin: 25px;
 }
-.section3--vignettes
+.sectionActivites--vignettes
 {
     display: flex;
     border-radius: 15px;
     height: 90%;
     justify-content: space-between;
 }
-.section3--vignettes--grandeVignette
+.sectionActivites--vignettes--grandeVignette
 {
     height: 100%;
     width: 22%;
     border-radius: 15px;
     box-shadow: 1px 1px 6px #8686863b;
 }
-.section3--vignettes--grandeVignette:hover
+.sectionActivites--vignettes--grandeVignette:hover
 {
     cursor: pointer;
     background-color: #f2f2f2af;
     transform:scale(1.04);
     transition: 0.2s;
 }
-.section3--vignettes--grandeVignette--img
+.sectionActivites--vignettes--grandeVignette--img
 {
     height: 90%;
     width: 100%;
@@ -466,12 +468,12 @@ a
     border-top-right-radius: 15px;
     object-fit: cover;
 }
-.section3--vignettes--grandeVignette h2
+.sectionActivites--vignettes--grandeVignette h2
 {
     margin-left: 3%;
     margin-top: 15px;
 }
-.section3--vignettes--petitesVignettes
+.sectionActivites--vignettes--petitesVignettes
 {
     display: flex;
     flex-direction: column;
@@ -480,64 +482,64 @@ a
     width: 20%;
     border-radius: 15px;
 }
-.section3--vignettes--petitesVignettes--case
+.sectionActivites--vignettes--petitesVignettes--case
 {
     height: 45%;
     width: 100%;
     border-radius: 15px;
     box-shadow: 1px 1px 6px #8686863b;
 }
-.section3--vignettes--petitesVignettes--case1
+.sectionActivites--vignettes--petitesVignettes--case1
 {
     height: 60%;
     width: 100%;
     border-radius: 15px;
     box-shadow: 1px 1px 6px #8686863b;
 }
-.section3--vignettes--petitesVignettes--case2
+.sectionActivites--vignettes--petitesVignettes--case2
 {
     height: 30%;
     width: 100%;
     border-radius: 15px;
     box-shadow: 1px 1px 6px #8686863b;
 }
-.section3--vignettes--petitesVignettes--case:hover
+.sectionActivites--vignettes--petitesVignettes--case:hover
 {
     cursor: pointer;
     background-color: #f2f2f2af;
     transform:scale(1.04);
     transition: 0.2s;
 }
-.section3--vignettes--petitesVignettes--case1:hover
+.sectionActivites--vignettes--petitesVignettes--case1:hover
 {
     cursor: pointer;
     background-color: #f2f2f2af;
     transform:scale(1.04);
     transition: 0.2s;
 }
-.section3--vignettes--petitesVignettes--case2:hover
+.sectionActivites--vignettes--petitesVignettes--case2:hover
 {
     cursor: pointer;
     background-color: #f2f2f2af;
     transform:scale(1.04);
     transition: 0.2s;
 }
-.section3--vignettes--petitesVignettes--case h2
+.sectionActivites--vignettes--petitesVignettes--case h2
 {
     margin-left: 2%;
     margin-top:15px;
 }
-.section3--vignettes--petitesVignettes--case1 h2
+.sectionActivites--vignettes--petitesVignettes--case1 h2
 {
     margin-left: 2%;
     margin-top:15px;
 }
-.section3--vignettes--petitesVignettes--case2 h2
+.sectionActivites--vignettes--petitesVignettes--case2 h2
 {
     margin-left: 2%;
     margin-top:15px;
 }
-.section3--petitesVignettes--case--img
+.sectionActivites--petitesVignettes--case--img
 {
     height: 80%;
     width: 100%;
@@ -545,7 +547,7 @@ a
     border-top-right-radius: 15px;
     object-fit: cover;
 }
-.section3--petitesVignettes--case--img1
+.sectionActivites--petitesVignettes--case--img1
 {
     height: 85%;
     width: 100%;
@@ -553,7 +555,7 @@ a
     border-top-right-radius: 15px;
     object-fit: cover;
 }
-.section3--petitesVignettes--case--img2
+.sectionActivites--petitesVignettes--case--img2
 {
     height: 68%;
     width: 100%;
@@ -647,7 +649,7 @@ a
         border: none;
     }
 
-    .section1
+    .sectionRecherche
     {
         grid-area: 2/1/3/3;
         height: 100%;
@@ -657,12 +659,12 @@ a
         margin-left: 2%;
         align-items: center;
     }
-    .section1--titre
+    .sectionRecherche--titre
     {
         width: 90%;
         margin-left: 5%;
     }
-    .section1--recherche
+    .sectionRecherche--recherche
     {
         margin-top: 6%;
         margin-bottom: 3%;
@@ -670,7 +672,7 @@ a
         width: 50%;
         height: 50px;
     }
-    .section1--recherche--boutton
+    .sectionRecherche--recherche--boutton
     {   
         padding-top: 0px;
         width: 17%;
@@ -678,7 +680,7 @@ a
         font-size: 0pt;
         color: transparent;
     }
-    .section1--recherche--boutton i
+    .sectionRecherche--recherche--boutton i
     {
         transform: scale(1);
         opacity: 100%;
@@ -687,26 +689,26 @@ a
         background-color: transparent;
         color: white ;
     }
-    .section1--recherche--boutton i:hover
+    .sectionRecherche--recherche--boutton i:hover
     {
         color: #0065FC ;
     }
-    .section1--recherche--boutton:hover
+    .sectionRecherche--recherche--boutton:hover
     {
         color: transparent;
     }
-    .section1--recherche i
+    .sectionRecherche--recherche i
     {
         font-size: 12pt;
         width: 17%;
     }
-    .section1--recherche--inpt
+    .sectionRecherche--recherche--inpt
     {
         width: 85%;
         font-size: 1.05rem
     }
     
-    .section1--filtres
+    .sectionRecherche--filtres
     {
         width:90%;
         height: 35%;
@@ -722,17 +724,17 @@ a
         width:90%;
         height: 75%;
     }
-    .section1--filtres--bouttons
+    .sectionRecherche--filtres--bouttons
     {
         border-radius: 100px;
     }
-    .section1--filtres--bouttons i
+    .sectionRecherche--filtres--bouttons i
     {
         font-size: 12pt;
         height: 100%;
         border-radius: 100px;
     }
-    .section1--info
+    .sectionRecherche--info
     {
         width: 90%;
         height: 50px;
@@ -740,11 +742,11 @@ a
         margin-left: 5%;
         margin-right: 5%;
     }
-    .section1--info p 
+    .sectionRecherche--info p 
     {
         margin-top: 0%;
     }
-    .section1--info i
+    .sectionRecherche--info i
     {
         font-size: 1rem;
         margin-bottom: 3%;
@@ -754,7 +756,7 @@ a
         border-radius:100%;
         border:1px #F2F2F2;
     }
-    #section2
+    #sectionHebergements
     {
         grid-area: 4/1/5/3;
         background-color: white;
@@ -763,11 +765,11 @@ a
         margin: 0%;
         height: 100%;
     }
-    .section2--hebergement
+    .sectionHebergements--hebergement
     {
         height: 95%;
     }
-    .section2--hebergement--vignette
+    .sectionHebergements--hebergement--vignette
     {
         width: 100%;
         height: 90%;
@@ -776,23 +778,23 @@ a
         justify-content: space-between;
         align-items: center;
     }
-    .section2--hebergement--titre
+    .sectionHebergements--hebergement--titre
     {
         margin-left: 1%;
         margin-top: 5%;
         margin-bottom: 5%;
     }
-    .section2--hebergement--vignette--case
+    .sectionHebergements--hebergement--vignette--case
     {
         width: 60%;
         height: 235px;
         margin-bottom: 3%;
     }
-    .section2--hebergement--vignette--case h2 
+    .sectionHebergements--hebergement--vignette--case h2 
     {
         margin-top: 1px;
     }
-    .section2--hebergement--vignette--case--img
+    .sectionHebergements--hebergement--vignette--case--img
     {
         width: 97%;
         margin-top: 1.5%;
@@ -800,28 +802,28 @@ a
         margin-right: 1.5%;
 
     }
-    .section2--hebergement--vignette--case--txt2
+    .sectionHebergements--hebergement--vignette--case--txt2
     {
         font-size: 1.05rem;
     }
-    .section2--hebergement--vignette--case--etoiles
+    .sectionHebergements--hebergement--vignette--case--etoiles
     {
         margin-top: 0.5%;
     }
-    .section2--hebergement--vignette--case--etoiles .fas
+    .sectionHebergements--hebergement--vignette--case--etoiles .fas
     {
         font-size: 10pt;
     }
-    .section2--hebergement--vignette--case--etoiles .far
+    .sectionHebergements--hebergement--vignette--case--etoiles .far
     {
         font-size: 10pt;
     }
-    .section2--affch h2
+    .sectionHebergements--affch h2
     {
         margin-top: 0%;
     }
 
-    .section25
+    .sectionPopulaires
     {
         grid-area: 3/1/4/3;
         display: flex;
@@ -830,45 +832,45 @@ a
         margin: 0%;
         border-radius: 0px;
     }
-    .section25--titre
+    .sectionPopulaires--titre
     {
         margin-bottom: 4%;
         margin-left: 5%;
         font-size: 1.2rem;
     }
-    .section25--vignette
+    .sectionPopulaires--vignette
     {
         width: 60%;
         height: 20%;
 
         align-items: center;
     }
-    .section25--vignette--img
+    .sectionPopulaires--vignette--img
     {
         margin-left: 1%;
     }
-    .section25--vignette h2
+    .sectionPopulaires--vignette h2
     {
         margin-top: -3%;
         margin-right: 20%;
     }
-    .section25--vignette--blcTxt-txt2
+    .sectionPopulaires--vignette--blcTxt-txt2
     {
         font-size: 0.95rem;
     }
-    .section25--vignette--blcTxt-etoiles
+    .sectionPopulaires--vignette--blcTxt-etoiles
     {
         margin-top: 14%;
     }
-    .section25--vignette--blcTxt-etoiles .far
+    .sectionPopulaires--vignette--blcTxt-etoiles .far
     {
         font-size: 10pt;
     }
-    .section25--vignette--blcTxt-etoiles .fas
+    .sectionPopulaires--vignette--blcTxt-etoiles .fas
     {
         font-size: 10pt;
     }
-    #section3
+    #sectionActivites
     {
         width: 90%;
         margin-left: 5%;
@@ -878,71 +880,71 @@ a
         flex-direction: column;
         justify-content: unset;
     }
-    #section3 h1
+    #sectionActivites h1
     {
         margin-bottom: 6%;
     }
-    .section3--vignettes
+    .sectionActivites--vignettes
     {
         flex-direction: column;
         align-items: center;
     }
-    .section3--vignettes--grandeVignette
+    .sectionActivites--vignettes--grandeVignette
     {
         width: 60%;
         height: 220px;
         margin-bottom: 5%;
     }
-    .section3--vignettes--petitesVignettes
+    .sectionActivites--vignettes--petitesVignettes
     {
         align-items: center;
         width: 100%;
         height: 45%;
         margin-bottom: 5%;
     }
-    .section3--vignettes--grandeVignette--img
+    .sectionActivites--vignettes--grandeVignette--img
     {
         height: 85%;
     }
-    .section3--vignettes--grandeVignette h2
+    .sectionActivites--vignettes--grandeVignette h2
     {
         margin-top: 3px;
     }
-    .section3--vignettes--petitesVignettes--case
+    .sectionActivites--vignettes--petitesVignettes--case
     {
         width: 60%;
         margin-bottom: 5%;
         height: 220px;
         box-shadow: 1px 1px 6px #8686863b;
     }
-    .section3--vignettes--petitesVignettes--case1
+    .sectionActivites--vignettes--petitesVignettes--case1
     {
         width: 60%;
         height: 220px;
     }
-    .section3--vignettes--petitesVignettes--case h2
+    .sectionActivites--vignettes--petitesVignettes--case h2
     {
         margin-top: 3px;
     }
-    .section3--vignettes--petitesVignettes--case1 h2
+    .sectionActivites--vignettes--petitesVignettes--case1 h2
     {
         margin-top: 3px;
     }
-    .section3--vignettes--petitesVignettes--case2 h2
+    .sectionActivites--vignettes--petitesVignettes--case2 h2
     {
         margin-top: 3px;
     }
-    .section3--petitesVignettes--case--img1
+    .sectionActivites--petitesVignettes--case--img1
     {
         height: 85%;
     }
-    .section3--vignettes--petitesVignettes--case2
+    .sectionActivites--vignettes--petitesVignettes--case2
     {
         width: 60%;
         margin-top: 5%;
         height: 195px;
     }
-    .section3--petitesVignettes--case--img2
+    .sectionActivites--petitesVignettes--case--img2
     {
         height: 85%;
     }
@@ -1022,7 +1024,7 @@ a
         border: none;
     }
 
-    .section1
+    .sectionRecherche
     {
         grid-area: 2/1/3/2;
         height: 100%;
@@ -1032,13 +1034,13 @@ a
         margin-top: 1%;
         margin-bottom: 10%;
     }
-    .section1--titre
+    .sectionRecherche--titre
     {
         width: 90%;
         margin-top: 5%;
         margin-left: 5%;
     }
-    .section1--recherche
+    .sectionRecherche--recherche
     {
         margin-top: 6%;
         margin-bottom: 3%;
@@ -1046,7 +1048,7 @@ a
         width: 85%;
         height: 50px;
     }
-    .section1--recherche--boutton
+    .sectionRecherche--recherche--boutton
     {   
         padding-top: 0px;
         width: 17%;
@@ -1054,7 +1056,7 @@ a
         font-size: 0pt;
         color: transparent;
     }
-    .section1--recherche--boutton i
+    .sectionRecherche--recherche--boutton i
     {
         transform: scale(1);
         opacity: 100%;
@@ -1063,26 +1065,26 @@ a
         background-color: transparent;
         color: white ;
     }
-    .section1--recherche--boutton i:hover
+    .sectionRecherche--recherche--boutton i:hover
     {
         color: #0065FC ;
     }
-    .section1--recherche--boutton:hover
+    .sectionRecherche--recherche--boutton:hover
     {
         color: transparent;
     }
-    .section1--recherche i
+    .sectionRecherche--recherche i
     {
         font-size: 12pt;
         width: 17%;
     }
-    .section1--recherche--inpt
+    .sectionRecherche--recherche--inpt
     {
         width: 80%;
         font-size: 1.05rem
     }
     
-    .section1--filtres
+    .sectionRecherche--filtres
     {
         width:90%;
         height: 50%;
@@ -1097,17 +1099,17 @@ a
         width:90%;
         height: 75%;
     }
-    .section1--filtres--bouttons
+    .sectionRecherche--filtres--bouttons
     {
         border-radius: 100px;
     }
-    .section1--filtres--bouttons i
+    .sectionRecherche--filtres--bouttons i
     {
         font-size: 12pt;
         height: 100%;
         border-radius: 100px;
     }
-    .section1--info
+    .sectionRecherche--info
     {
         width: auto;
         height: auto;
@@ -1116,7 +1118,7 @@ a
         margin-left: 5%;
         margin-right: 5%;
     }
-    .section1--info i
+    .sectionRecherche--info i
     {
         font-size: 1rem;
         margin-bottom: 5.5%;
@@ -1126,7 +1128,7 @@ a
         border-radius:100%;
         border:1px #F2F2F2;
     }
-    #section2
+    #sectionHebergements
     {
         grid-area: 4/1/5/2;
         background-color: white;
@@ -1135,11 +1137,11 @@ a
         margin: 0%;
         height: 100%;
     }
-    .section2--hebergement
+    .sectionHebergements--hebergement
     {
         height: 95%;
     }
-    .section2--hebergement--vignette
+    .sectionHebergements--hebergement--vignette
     {
         width: 100%;
         height: 98%;
@@ -1147,20 +1149,20 @@ a
         flex-wrap: nowrap;
         justify-content: space-between;
     }
-    .section2--hebergement--titre
+    .sectionHebergements--hebergement--titre
     {
         margin-left: 1%;
         margin-top: 5%;
         margin-bottom: 5%;
     }
-    .section2--hebergement--vignette--case
+    .sectionHebergements--hebergement--vignette--case
     {
         width: 100%;
         height: 195px;
         margin-bottom: 8%;
         
     }
-    .section2--hebergement--vignette--case--img
+    .sectionHebergements--hebergement--vignette--case--img
     {
         width: 97%;
         margin-top: 1.5%;
@@ -1168,28 +1170,28 @@ a
         margin-right: 1.5%;
 
     }
-    .section2--hebergement--vignette--case--txt2
+    .sectionHebergements--hebergement--vignette--case--txt2
     {
         font-size: 1.05rem;
     }
-    .section2--hebergement--vignette--case--etoiles
+    .sectionHebergements--hebergement--vignette--case--etoiles
     {
         margin-top: 0.5%;
     }
-    .section2--hebergement--vignette--case--etoiles .fas
+    .sectionHebergements--hebergement--vignette--case--etoiles .fas
     {
         font-size: 10pt;
     }
-    .section2--hebergement--vignette--case--etoiles .far
+    .sectionHebergements--hebergement--vignette--case--etoiles .far
     {
         font-size: 10pt;
     }
-    .section2--affch h2
+    .sectionHebergements--affch h2
     {
         margin-top: 0%;
     }
 
-    .section25
+    .sectionPopulaires
     {
         grid-area: 3/1/4/2;
         display: flex;
@@ -1198,45 +1200,45 @@ a
         margin: 0%;
         border-radius: 0px;
     }
-    .section25--titre
+    .sectionPopulaires--titre
     {
         margin-bottom: 4%;
         margin-left: 5%;
         font-size: 1.2rem;
     }
-    .section25--vignette
+    .sectionPopulaires--vignette
     {
         width: 90%;
         height: 25%;
 
         align-items: center;
     }
-    .section25--vignette--img
+    .sectionPopulaires--vignette--img
     {
         margin-left: 1%;
     }
-    .section25--vignette h2
+    .sectionPopulaires--vignette h2
     {
         margin-top: -3%;
         margin-right: 20%;
     }
-    .section25--vignette--blcTxt-txt2
+    .sectionPopulaires--vignette--blcTxt-txt2
     {
         font-size: 0.95rem;
     }
-    .section25--vignette--blcTxt-etoiles
+    .sectionPopulaires--vignette--blcTxt-etoiles
     {
         margin-top: 14%;
     }
-    .section25--vignette--blcTxt-etoiles .far
+    .sectionPopulaires--vignette--blcTxt-etoiles .far
     {
         font-size: 10pt;
     }
-    .section25--vignette--blcTxt-etoiles .fas
+    .sectionPopulaires--vignette--blcTxt-etoiles .fas
     {
         font-size: 10pt;
     }
-    #section3
+    #sectionActivites
     {
         width: 90%;
         margin-left: 5%;
@@ -1246,69 +1248,69 @@ a
         flex-direction: column;
         justify-content: unset;
     }
-    #section3 h1
+    #sectionActivites h1
     {
         margin-bottom: 6%;
     }
-    .section3--vignettes
+    .sectionActivites--vignettes
     {
         flex-direction: column;
     }
-    .section3--vignettes--grandeVignette
+    .sectionActivites--vignettes--grandeVignette
     {
         width: 100%;
         height: 195px;
         margin-bottom: 5%;
     }
-    .section3--vignettes--petitesVignettes
+    .sectionActivites--vignettes--petitesVignettes
     {
         width: 100%;
         height: 45%;
         margin-bottom: 5%;
     }
-    .section3--vignettes--grandeVignette--img
+    .sectionActivites--vignettes--grandeVignette--img
     {
         height: 85%;
     }
-    .section3--vignettes--grandeVignette h2
+    .sectionActivites--vignettes--grandeVignette h2
     {
         margin-top: 1%;
     }
-    .section3--vignettes--petitesVignettes--case
+    .sectionActivites--vignettes--petitesVignettes--case
     {
        
         margin-bottom: 5%;
         height: 195px;
         box-shadow: 1px 1px 6px #8686863b;
     }
-    .section3--vignettes--petitesVignettes--case h2 
+    .sectionActivites--vignettes--petitesVignettes--case h2 
     {
         margin-top: 1px;
     }
-    .section3--vignettes--petitesVignettes--case1
+    .sectionActivites--vignettes--petitesVignettes--case1
     {
         
         height: 195px;
     }
-    .section3--vignettes--petitesVignettes--case1 h2 
+    .sectionActivites--vignettes--petitesVignettes--case1 h2 
     {
         margin-top: 1px;
     }
-    .section3--petitesVignettes--case--img1
+    .sectionActivites--petitesVignettes--case--img1
     {
         height: 85%;
     }
-    .section3--vignettes--petitesVignettes--case2
+    .sectionActivites--vignettes--petitesVignettes--case2
     {
         
         margin-top: 5%;
         height: 195px;
     }
-    .section3--vignettes--petitesVignettes--case2 h2 
+    .sectionActivites--vignettes--petitesVignettes--case2 h2 
     {
         margin-top: 1px;
     }
-    .section3--petitesVignettes--case--img2
+    .sectionActivites--petitesVignettes--case--img2
     {
         height: 85%;
     }
