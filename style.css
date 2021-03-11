@@ -8,12 +8,12 @@
 /*Général*/
 body
 {
-    height: 214vh;
+    height: 100vh;
     margin:auto;
     font-family:"Raleway", Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 1.3fr 1.3fr 1.3fr 1.05fr 1.05fr;
-    grid-template-rows: 10vh 33vh 72.5vh 80.5vh 26vh;
+    grid-template-rows: 100px 300px 680px 583px 218px;
     grid-template-areas: 
     "hautPage hautPage hautPage hautPage hautPage"
     "sectionRecherche sectionRecherche sectionRecherche sectionRecherche sectionRecherche"
@@ -238,7 +238,7 @@ a
 .sectionRecherche--filtres--bouttons h2
 {
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 15px;
     font-size: 0.95rem;
     font-weight: bold;
     white-space: nowrap
@@ -306,7 +306,7 @@ a
 .sectionHebergements--hebergement--vignette--case
 {
     background-color: white;
-    width: 30%;
+    width: 28%;
     height: 200px;
     border-radius: 20px;
     box-shadow: 1px 1px 6px #8686863b;
@@ -320,10 +320,10 @@ a
 }
 .sectionHebergements--hebergement--vignette--case--img
 {
-    margin-right: 2.5%;
-    margin-left: 2.5%;
-    margin-top: 2.5%;
-    width: 95%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+    width: 97%;
     height: 58%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
