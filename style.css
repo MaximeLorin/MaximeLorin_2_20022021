@@ -870,6 +870,7 @@ a
     }
     .sectionPopulaires--vignette--img
     {
+        height: 95%;
         margin-left: 1%;
     }
     .sectionPopulaires--vignette h2
@@ -1160,6 +1161,9 @@ a
     }
     .sectionHebergements--hebergement
     {
+        width: 93%;
+        margin-left: 3.5%;
+        margin-right: 3.5%;
         height: 95%;
     }
     .sectionHebergements--hebergement--vignette
@@ -1235,7 +1239,8 @@ a
     {
         width: 90%;
         height: 25%;
-
+        margin-right: 5%;
+        margin-left: 5%;
         align-items: center;
     }
     .sectionPopulaires--vignette--img
