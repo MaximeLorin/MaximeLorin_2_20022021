@@ -6,6 +6,7 @@
     font-style: normal;
 }
 /*Général*/
+
 body
 {
     height: 100vh;
@@ -597,7 +598,7 @@ a
 }
 .basPage--colonne
 {
-    width: 350px;
+    
     margin-left: 2vw;
     margin-right: 8vw;
     margin-top: 2%;
@@ -1249,6 +1250,7 @@ a
     }
     .sectionPopulaires--vignette h2
     {
+        width: 95%;
         margin-top: -3%;
         margin-right: 20%;
     }
